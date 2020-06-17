@@ -4,34 +4,23 @@ import React, { Component } from 'react';
 import '../assets/css/App.css';
 import 'bulma/css/bulma.css'
 // Components
-import { Title } from './Title'
-import SearchForm from './SearchForm'
-import MovieList from './MoviesList';
+import Home from './Home'
+import Details from './Details'
 
 class App extends Component {
 
-  state = {
-    results: []
-  }
-  handleResult = (result) => {
-    this.setState({
-      results: result
-    })
-  }
 
 
   render() {
-    return (
+    const url = new URL(document.location)
+    const Page = url.searchParams.has('id')
+      ? <Details id={url.searchParams.get('id')} />
+      : <Home />
 
+
+    return (
       <div className='App'>
-        <Title>Search Movies</Title>
-        <div className='SearchForm-wrapper'>
-          <SearchForm onResults={this.handleResult} />
-        </div>
-        {this.state.results === undefined || this.state.results.length === 0
-          ? <p>Sin Resultados</p>
-          : <MovieList movies={this.state.results} />
-        }
+        {Page}
       </div>
 
     )

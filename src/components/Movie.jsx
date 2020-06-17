@@ -6,7 +6,7 @@ class Movie extends Component {
     render() {
         const { movie } = this.props
         return (
-            <div className="card">
+            <a href={`?id=${movie.imdbID}`} className="card">
                 <div className="card-image">
                     <figure className="image">
                         <img src={movie.Poster} alt={movie.Title} />
@@ -20,7 +20,8 @@ class Movie extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
+            
         )
     }
 

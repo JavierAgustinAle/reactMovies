@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 
+
 const API_KEY = 'e2c683b0'
 
 class SearchForm extends Component {
@@ -19,7 +20,7 @@ class SearchForm extends Component {
 
         axios.get(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${inputMovie}`)
             .then(result => {
-                const { Search } = result.data
+                const { Search = [] } = result.data
                 this.props.onResults(Search)
             })
     }
