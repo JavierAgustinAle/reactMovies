@@ -3,6 +3,9 @@
   text-align: center;
 }
 
+body {
+  background-color: rgb(12, 12, 12);
+}
 .SearchForm-wrapper {
   display:  flex;
   justify-content: center;

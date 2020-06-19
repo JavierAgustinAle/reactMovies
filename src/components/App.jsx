@@ -8,6 +8,7 @@ import 'bulma/css/bulma.css'
 import Home from './Home'
 import Details from './Details'
 import NotFound from './NotFound'
+import ButtonGitHub from './ButtonGitHub'
 
 class App extends Component {
 
@@ -15,13 +16,15 @@ class App extends Component {
 
   render() {
     return (
-      <div className='App'>
+      <div className='App' >
+        <ButtonGitHub /><br /><br /><br />
         <Switch>
           <Route exact path='/' component={Home} />
 
           <Route exact path='/details/:id' component={Details} />
           <Route component={NotFound} />
         </Switch>
+
       </div>
 
     )

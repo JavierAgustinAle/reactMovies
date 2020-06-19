@@ -9,7 +9,7 @@ class Movie extends Component {
         return (
             <Link to={`/details/${movie.imdbID}`} className="card">
                 <div className="card-image">
-                    <figure className="image">
+                    <figure className="image is-1by1">
                         {
                             movie.Poster
                                 ? <img src={movie.Poster} alt={movie.Title}></img>
