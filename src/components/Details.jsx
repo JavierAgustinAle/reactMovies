@@ -54,7 +54,7 @@ class Details extends Component {
                 <div className="columns is-mobile is-centered">
                     <div className="column is-half">
                         <p className="bd-notification is-primary">
-                            <code className="html">Movie Plot</code><br />
+                            <code className="html">Plot</code><br />
                             <code className="html">{movie.Plot}</code><br />
                         </p>
                     </div>
