@@ -19,7 +19,7 @@ class App extends Component {
       <div className='App' >
         <ButtonGitHub /><br /><br /><br />
         <Switch>
-          <Route exact path='/' component={Home} />
+          <Route exact path='/reactMovies' component={Home} />
 
           <Route exact path='/details/:id' component={Details} />
           <Route component={NotFound} />
