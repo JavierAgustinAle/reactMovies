@@ -1,3 +1,10 @@
+ Pagina realizada con React js, utilizando la API OMDB Api,podemos realizar la busqueda de peliculas. Se nos presentara una lista con los resultados encontrados y podemos elegir dar click en alguna de ellas para asi poder acceder a una vista con mas detalles.
+ Tambien cuenta con una simple pagina 404 en caso de que se ingrese una URL incorrecta.
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
