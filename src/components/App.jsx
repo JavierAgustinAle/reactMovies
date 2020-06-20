@@ -5,10 +5,10 @@ import { Switch, Route } from 'react-router-dom'
 import '../assets/css/App.css';
 import 'bulma/css/bulma.css'
 // Components
-import Home from './Home'
-import Details from './Details'
-import NotFound from './NotFound'
-import ButtonGitHub from './ButtonGitHub'
+import Home from '../components/Pages/Home'
+import Details from '../components/Templates/Details'
+import NotFound from '../components/Atoms/NotFound'
+import ButtonGitHub from '../components/Atoms/ButtonGitHub'
 
 class App extends Component {
 

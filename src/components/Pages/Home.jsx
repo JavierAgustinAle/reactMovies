@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 // Components
-import MovieList from './MoviesList'
-import { Title } from './Title'
+import MovieList from '../Templates/MoviesList'
+import { Title } from '../Atoms/Title'
 import SearchForm from './SearchForm'
 
 class Home extends Component {

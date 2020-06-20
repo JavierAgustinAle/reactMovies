@@ -18,7 +18,7 @@ class SearchForm extends Component {
         e.preventDefault()          // Evita que se ejecute el evento nativo por defecto que realiza el navegador cuando enviamos el formulario
         const { inputMovie } = this.state
 
-        axios.get(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${inputMovie}`)
+        axios.get(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${inputMovie}`)
             .then(result => {
                 const { Search = [] } = result.data
                 this.props.onResults(Search)

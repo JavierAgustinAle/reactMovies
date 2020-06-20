@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import ButtonBackToHome from './ButtonBackToHome'
+import ButtonBackToHome from '../Atoms/ButtonBackToHome'
 
 
 const API_KEY = 'e2c683b0'
@@ -11,7 +11,7 @@ class Details extends Component {
     }
 
     fetchMovie({ id }) {
-        fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&i=${id}`)
+        fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&i=${id}`)
             .then(res => res.json())
             .then(movie => {
                 this.setState({ movie })
