@@ -3,10 +3,10 @@
  
  
 
-LIBRERIAS usadas:
- *Axios
- *Bulma
- *React Router
+LIBRERIAS usadas:<br />
+ *Axios <br />
+ *Bulma <br />
+ *React Router <br />
 
 
 
