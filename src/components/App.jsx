@@ -1,36 +1,19 @@
-import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom'
+import React from 'react';
 
 // Style
 import '../assets/css/App.css';
 import 'bulma/css/bulma.css'
-// Components
-import Home from '../components/Pages/Home'
-import Details from '../components/Templates/Details'
-import NotFound from '../components/Atoms/NotFound'
-import ButtonGitHub from '../components/Atoms/ButtonGitHub'
 
-class App extends Component {
+// Component
+import AppRoutes from './AppRoutes'
+// Provider
+import CartVistoProvider from './Context/CartVistoProvider';
 
+const App = () => (
+  <CartVistoProvider>
+    <AppRoutes />
+  </CartVistoProvider>
 
-
-  render() {
-    return (
-      <div className='App' >
-        <ButtonGitHub /><br /><br /><br />
-        <Switch>
-          <Route exact path='/reactMovies' component={Home} />
-
-          <Route exact path='/details/:id' component={Details} />
-          <Route component={NotFound} />
-        </Switch>
-
-      </div>
-
-    )
-  }
-}
-
-
+)
 
 export default App;
