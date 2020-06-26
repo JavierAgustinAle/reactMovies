@@ -1,6 +1,7 @@
 import React, { useReducer } from 'react'
 import CartVistoContext from './CartVistoContext';
 import { ADD_TO_CART, REMOVE_FROM_CART } from './actions';
+import ContextDevTool from 'react-context-devtool';
 
 
 const initialState = {
@@ -17,7 +18,8 @@ const cartVistoReducer = (state, { type, data }) => {
 
     if (type === REMOVE_FROM_CART) {
         return {
-            cart: state.cart.filter(m => m.id !== data)
+            cart: state.cart.filter(m => m !== data)
+
         }
     }
 
@@ -30,6 +32,7 @@ const CartVistoProvider = ({ children }) => {
 
     return (
         <CartVistoContext.Provider value={[state, dispatch]}>
+            <ContextDevTool context={CartVistoContext} id="uniqContextId" displayName="Context Movies" />
             {children}
         </CartVistoContext.Provider>
     )
