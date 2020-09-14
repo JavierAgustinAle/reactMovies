@@ -1,7 +1,7 @@
 import React from 'react';
-
 // Style
 import '../assets/css/App.css';
+import 'bootstrap/dist/css/bootstrap.css'
 import 'bulma/css/bulma.css'
 
 // Component

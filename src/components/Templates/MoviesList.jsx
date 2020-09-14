@@ -8,17 +8,17 @@ class MovieList extends Component {
     render() {
         const { movies } = this.props
         return (
-            <div className='MoviesList'>
+            <div className="row pl-2 pr-2 pb-3">
                 {
                     movies.map(movie => {
                         return (
-                            <div key={movie.imdbID} className='MoviesList-item'>
-                                <Movie movie={movie}
-                                    imdbID={movie.imdbID}
-                                    Poster={movie.Poster}
-                                    Title={movie.Title}
-                                    Year={movie.Year} />
-                            </div>
+                            <Movie movie={movie}
+                                imdbID={movie.imdbID}
+                                Poster={movie.Poster}
+                                Title={movie.Title}
+                                Year={movie.Year}
+                                key={movie.imdbID} />
+
                         )
                     })
                 }
