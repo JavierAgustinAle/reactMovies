@@ -10,7 +10,7 @@
     "axios": "^0.19.2",
     "boostrap": "^2.0.0",
     "bootstrap": "^4.5.2",
-    "bulma": "^0.9.0",
+    "bulma": "^0.9.1",
     "ed-grid": "^2.9.0",
     "edteam-style-guides": "^0.0.67",
     "node-sass": "^4.14.1",
@@ -46,6 +46,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.0.0"
+    "gh-pages": "^3.1.0"
   }
 }
